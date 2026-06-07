@@ -1,0 +1,151 @@
+/* Base Styles */
+body {
+    /* The linear-gradient creates a dark overlay so your text stays readable! */
+    background-image: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('cyber.jpg');
+    background-size: cover;          /* Makes sure the image covers the whole screen */
+    background-position: center;     /* Centers the image */
+    background-attachment: fixed;    /* Makes the background stay still when you scroll! */
+    
+    color: #00d8d8;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+nav {
+    background-color: #161b22;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #91b595;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #c9d1d9;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    color: #3fb950;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Spacing */
+section {
+    padding-top: 60px; /* Helps with sticky nav spacing */
+    margin-bottom: 40px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: #58a6ff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #3fb950;
+    margin-top: 5px;
+}
+
+h3 {
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section (Photo + Text) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hero-text {
+    flex: 2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the photo a perfect circle! */
+    border: 3px solid #3fb950;
+    object-fit: cover;
+}
+
+/* Boxes for Projects & Education */
+.box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-left: 4px solid #58a6ff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box h4 {
+    margin-top: 0;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #3fb950;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    margin-top: 40px;
+}
