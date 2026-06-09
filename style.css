@@ -149,3 +149,18 @@ footer {
     border-top: 1px solid #30363d;
     margin-top: 40px;
 }
+
+.project-card {
+    margin-bottom: 25px;
+}
+
+.project-link {
+    color: #00ffcc; 
+    text-decoration: none; 
+    margin-right: 20px; 
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
